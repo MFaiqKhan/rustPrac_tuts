@@ -6,6 +6,6 @@ use std::io::{Write, BufReader, BufRead, ErrorKind}; // bufreader is a buffered 
 use std::fs::File;
 use std::cmp::Ordering;
 
-fn variable( ) {
+fn variable() {
     
 }
