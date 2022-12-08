@@ -7,6 +7,7 @@ mod maths;
 mod random;
 mod if_statement;
 mod ternary_operator;
+mod match_statement;
 
 pub use crate::variable::variable; // This is will run the variable function from the variable module
 
@@ -15,6 +16,7 @@ use crate::maths::maths; // This is will run the maths function from the maths m
 use crate::random::random;
 use crate::if_statement::iff;
 use crate::ternary_operator::ternary_operator;
+use crate::match_statement::matchh;
 
 
 use std::io;  // Import the io library from the standard library
@@ -56,7 +58,11 @@ fn main() {
     // ternary_operator
     println!("-------------------------------ternary_operator.rs----------------------------------");
     ternary_operator::ternary_operator();
-    
+
+    // match_statement
+    println!("-------------------------------match_statement.rs----------------------------------");
+    match_statement::matchh();
+
 
 
 }
