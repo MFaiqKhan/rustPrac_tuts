@@ -8,6 +8,14 @@ mod random;
 mod if_statement;
 mod ternary_operator;
 mod match_statement;
+mod arrays;
+mod loops;
+mod tuples;
+mod str;
+mod castingg;
+mod enums;
+mod vectors;
+
 
 pub use crate::variable::variable; // This is will run the variable function from the variable module
 
@@ -17,6 +25,13 @@ use crate::random::random;
 use crate::if_statement::iff;
 use crate::ternary_operator::ternary_operator;
 use crate::match_statement::matchh;
+use crate::arrays::arrays;
+use crate::loops::loops;
+use crate::tuples::tuple;
+use crate::str::sstrings;
+use crate::castingg::casting;
+use crate::enums::enums;
+use crate::vectors::vectors;
 
 
 use std::io;  // Import the io library from the standard library
@@ -63,6 +78,33 @@ fn main() {
     println!("-------------------------------match_statement.rs----------------------------------");
     match_statement::matchh();
 
+    // arrays
+    println!("-------------------------------arrays.rs----------------------------------");
+    arrays::arrays();
+
+    // loops
+    println!("-------------------------------loops.rs----------------------------------");
+    loops::loops();
+    
+    // tuples
+    println!("-------------------------------tuples.rs----------------------------------");
+    tuples::tuple();
+
+    // strings
+    println!("-------------------------------strings.rs----------------------------------");
+    str::sstrings();
+
+    // casting
+    println!("-------------------------------casting.rs----------------------------------");
+    castingg::casting();
+
+    // enums
+    println!("-------------------------------enums.rs----------------------------------");
+    enums::enums();
+
+    // vectors
+    println!("-------------------------------vectors.rs----------------------------------");
+    vectors::vectors();
 
 
 }
