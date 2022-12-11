@@ -23,3 +23,6 @@ pub fn datatypes() {
     let is_active: bool = !false; // boolean type is either true or false
     println!("Is active : {}", is_active);
 }
+
+// what is usize ?
+// usize is a data type that is the same size as the pointer size of the processor.
