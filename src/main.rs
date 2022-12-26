@@ -15,6 +15,16 @@ mod str;
 mod castingg;
 mod enums;
 mod vectors;
+mod functions;
+mod generics;
+mod ownership;
+mod hashmaps;
+mod structsandtraits;
+mod restaurant;
+mod errorhandlingandfileio;
+mod boxx;
+
+
 
 
 pub use crate::variable::variable; // This is will run the variable function from the variable module
@@ -32,6 +42,13 @@ use crate::str::sstrings;
 use crate::castingg::casting;
 use crate::enums::enums;
 use crate::vectors::vectors;
+use crate::functions::functions;
+use crate::generics::generics;
+use crate::ownership::ownership;
+use crate::hashmaps::hashmaps;
+use crate::structsandtraits::structsandtraits;
+use crate::restaurant::order_food;
+use crate::boxx::boxx;
 
 
 use std::io;  // Import the io library from the standard library
@@ -105,6 +122,34 @@ fn main() {
     // vectors
     println!("-------------------------------vectors.rs----------------------------------");
     vectors::vectors();
+
+    // functions
+    println!("-------------------------------functions.rs----------------------------------");
+    functions::functions();
+
+    // generics
+    println!("-------------------------------generics.rs----------------------------------");
+    generics::generics();
+
+    // ownership
+    println!("-------------------------------ownership.rs----------------------------------");
+    ownership::ownership();
+
+    // hashmaps
+    println!("-------------------------------hashmaps.rs----------------------------------");
+    hashmaps::hashmaps();
+
+    // structsandtraits
+    println!("-------------------------------structsandtraits.rs----------------------------------");
+    structsandtraits::structsandtraits();
+
+    // restaurant
+    println!("-------------------------------restaurant.rs----------------------------------");
+    restaurant::order_food();
+
+    // Box
+    println!("-------------------------------box.rs----------------------------------");
+    boxx::boxx();
 
 
 }
