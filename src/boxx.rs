@@ -23,5 +23,6 @@ pub fn boxx() {
 
 // second use case for box is recursive data types
 // e.g we have a struct and one of that field of that struct is the struct that it is enclosed in.
+// like: struct Node { value: i32, next: Box<Node> }
 
 // memory in box will be freed when the box goes out of scope
