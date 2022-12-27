@@ -23,6 +23,7 @@ mod structsandtraits;
 mod restaurant;
 mod errorhandlingandfileio;
 mod boxx;
+mod rcc;
 
 
 
@@ -49,6 +50,7 @@ use crate::hashmaps::hashmaps;
 use crate::structsandtraits::structsandtraits;
 use crate::restaurant::order_food;
 use crate::boxx::boxx;
+use crate::rcc::rcc;
 
 
 use std::io;  // Import the io library from the standard library
@@ -151,6 +153,9 @@ fn main() {
     println!("-------------------------------box.rs----------------------------------");
     boxx::boxx();
 
+    // Rc
+    println!("-------------------------------Rc.rs----------------------------------");
+    rcc::rcc();
 
 }
 
