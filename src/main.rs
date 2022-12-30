@@ -24,6 +24,7 @@ mod restaurant;
 mod errorhandlingandfileio;
 mod boxx;
 mod rcc;
+mod macross;
 
 
 
@@ -51,6 +52,7 @@ use crate::structsandtraits::structsandtraits;
 use crate::restaurant::order_food;
 use crate::boxx::boxx;
 use crate::rcc::rcc;
+use crate::macross::printt;
 
 
 use std::io;  // Import the io library from the standard library
@@ -156,6 +158,10 @@ fn main() {
     // Rc
     println!("-------------------------------Rc.rs----------------------------------");
     rcc::rcc();
+
+    // Macros
+    println!("-------------------------------Macros.rs----------------------------------");
+    macross::printt();
 
 }
 
